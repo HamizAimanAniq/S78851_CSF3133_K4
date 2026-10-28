@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang ="en">
+    <head>
+        <title>UMT CAREER FAIR REGISTRATION </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>UMT Career Fair Registration.</h1>
+        <form action="register.html" method="post">
+
+            <label for="FullName">Full Name: <br> </label><input type ="text" id="FullName" name="FullName">
+            <br>
+            <p> </p>
+            <label for="MatricNo">Matric Number: <br> </label> <input type ="text" id="MatricNo" name="MatricNo">
+            <br>
+            <p> </p>
+            <label for="Email">Email:<br> </label> <input type ="text" id="Email" name="Email">
+            <br>
+            <h2>Current Year of Study</h2>
+            <input type="radio" id="Year1" name ="year" value="Year1" >
+            <label for="Year1">Year 1</label><br>
+            <input type="radio" id="Year2" name ="year" value="Year2" >
+            <label for="Year2">Year 2</label><br>
+            <input type="radio" id="Year3" name ="year" value="Year3" >
+            <label for="Year3">Year 3</label><br>
+            <input type="radio" id="Year4" name ="year" value="Year4" >
+            <label for="Year4">Year 4</label><br>
+            
+            <br><!-- comment -->
+            <h2>Faculty </h2>
+
+            <select id="faculty" name="faculty">
+                <option value="fskm">Faculty of Computing and Mathematical Sciences</option>
+                <option value="fsk">Faculty of Science</option>
+                <option value="fskk">Faculty of Engineering</option>
+                <option value="fpp">Faculty of Business and Management</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
