@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Course Feedback</title>
+    </head>
+    <body>
+        <header>
+            <h1>CSF3133 Course Feedback</h1>
+        </header> <!-- ERROR 1: Lines 18 - Should be </header>, not </head> -->
+
+
+        <nav>
+            <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+        </nav>
+        <section id="results">
+            <h2>Feedback Summary</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                    <th>Rating</th> <!-- ERROR 2: Lines 31 - <th> for the table header -->
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Introduction to HTML</td>
+                    <td>4.5</td>
+                </tr><!-- ERROR 3: Lines 37 - Missing </tr> -->
+                <tr>
+                    <td>2</td>
+                    <td colspan="2">Tables and Forms</td><!-- ERROR 4: Line 40 - colspan="3" spans 3 columns-->
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Semantic HTML<td>4.0</td><!-- ERROR 5: Lines 45 - Missing </td> after "Semantic HTML" -->
+
+                </tr>
+            </table>
+        </section>
+
+        <section id="form">
+            <h2>Give Your Feedback</h2>
+
+            <form action="submit_feedback.php" method="post">
+
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="name"><!-- ERROR 6: Lines 55-57 - label "for" must match input "id". Use for="fullname" -->
+
+                <br>
+
+                <label>Overall rating:</label><br>
+
+                <input type="radio" id="good" name="good" value="good">
+                <label for="good">Good</label>
+
+                <input type="radio" id="poor" name="poor" value="poor">
+                <label for="poor">Poor</label>
+                <!-- ERROR 7: Lines 42-45 - Both radio buttons should have the same name -->
+
+                <br>
+
+                <input type="checkbox" id="lab" name="lab" value="yes">
+                <label for="lab">I attended all labs</label> <!-- ERROR 8: Lines 73 for="labs" does not match id="lab" -->
+
+                <br>
+
+                <input type="submit" value="Submit">
+
+                </form><!-- ERROR 9: Line 80 - </from> is incorrect. It should be </form> -->
+
+                </section>
+
+                <footer>
+                    <p>Copyright &copy; 2026 CSF3133</p> <!-- ERROR 10: Line 85 - &copy should be written as &copy; -->
+
+                </footer>
+
+                </body>
+                </html>
