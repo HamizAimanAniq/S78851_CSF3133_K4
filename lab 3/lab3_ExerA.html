@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang='en'>
+    <head>
+        <title>Campus Bakery Online Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Bake@Campus 
+                <span>By Student For Student</span>
+            </h1>
+        </header>
+
+        <div id="#nav">
+            <a href="#Home">Home</a> |
+            <a href="#Sidebar">Price List</a> |
+            <a href="#Order">Order Now</a> |
+            <a href="#Contact">Contact Us</a>
+        </div>
+
+        <section id="Content">
+            <h2 id="Home">Welcome to Bake@Campus</h2>
+            <p>At <strong>Bake@Campus</strong>, we pride ourselves in providing <em>quality</em> bread, cake and drinks <span>fresh and delicious</span>, at an affordable price.</p>
+            <a href="#Order">Place your order now!</a>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Affordable</li>
+                <li>Friendly Staff</li>
+                <li>Freshly baked everyday</li>
+            </ul>
+
+            <div id="Order">
+                <h2>Your Order</h2>
+                <form oninput="total.value = (cupcakes.value*3)+(cake.value*5)">
+                    <input type="text" id="customer" name="customer" placeholder="Customer Name: " required autofocus>
+                    <br><br> 
+
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number: " required>
+                    <br><br>
+
+                    <input type="email" id="email" name="email" placeholder="Enter email: " required>
+                    <br><br>
+
+                    <label for="date">Pick-up Date:</label>
+                    <input type="date" id="date" name="date">
+                    <br><br>
+
+                    <label for="time">Pick-up time:</label>
+                    <input type="time" id="time" name="time">
+                    <br><br>
+                    
+                    <label for="color">Icing colour</label>
+                    <input type="color" id="color" name="icing color" value="#ff0000">
+                    <label for="sweetness">Sweetness Level (1-5):</label>
+
+                    <input type="range"
+                           id="sweetness"
+                           name="sweetness"
+                           min="1"
+                           max="5"
+                           step="1"
+                           value="3">
+                    <br><br>
+
+                    <label for="cupcakes">Cupcakes (RM 3.00 each):</label>
+                    <input type="number"
+                           id="cupcakes"
+                           name="cupcakes"
+                           min="0"
+                           value="0">
+                    <br><br>
+
+                    <label for="slices">Cake Slices (RM 5.00 each):</label>
+                    <input type="number"
+                           id="slices"
+                           name="slices"
+                           min="0"
+                           value="0">
+                    <br><br>
+                    <button type="submit">Submit Order</button>
+
+                    <label for="total">Total Price (RM):</label>
+                    <output name="total"
+                            id="total"
+                            for="cupcakes slices">0</output>
+                    <br><br>
+                   
+
+                </form>
+            </div>
+        </section>
+
+        <aside id="#Sidebar">
+            <h2>Price List</h2>
+            <ul>
+                <li>Cupcakes = RM 3.00</li>
+                <li>Cake Slices = RM 5.00</li>
+            </ul>
+            <p>Special Offer: Order &gt;10 with a free drink</p>
+            <p>All prices are in RM&nbsp; (Malaysian Ringgit)</p>
+        </aside>
+
+        <footer>
+            <h2 id="Contact">Our Contact</h2>
+            <p>Email: BakeAtCampus@gmail.com</p>
+            <p>&copy;Bake@Campus&reg;. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
+
+<!--Testing
+
+1)The form prompt us to fill in the required field before submitting
+2)The e-mail field only accept valid email adress with @ in the adress
+
+-->
