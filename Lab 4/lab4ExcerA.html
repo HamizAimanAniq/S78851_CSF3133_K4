@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Discover the beautiful destinations and attractions of Terengganu, Malaysia.">
+
+        <title>Visit Terengganu - Tourism Promotion</title>
+
+        <link rel="stylesheet" href="style.css">
+
+
+
+        <style>
+            .hero {
+                background-color: #dff5f0;
+                padding: 30px;
+                text-align: center;
+            }
+
+            .intro {
+                color: #245b50;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header id="top">
+            <h1>Visit Terengganu</h1>
+            <p>The beauty of East Coast is for you to Discover!</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#video">Promotional Video</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section id="home" class="hero">
+                <h2>Welcome to Terengganu</h2>
+
+                <p class="intro">
+                    Breathtaking beaches, beautiful lake, delicous food, calming tourist destination, and friendly locals is some but not all that Terengganu have to offer, discover the beauty of Terenganu.
+                </p>
+            </section>
+
+            <section id="destinations">
+
+                <h2>Our Popular Destinations</h2>
+
+                <p>
+                    Special destination and promotion curated just for you!
+                </p>
+
+                <article id="redang" class="trip-card">
+                    <h3>Pulau Redang</h3>
+
+                    <p>
+                        Crystal-clear waters, white sandy beaches and
+                        amazing underwater activities at Pulau Redang.
+                    </p>
+
+                    <p class="price">
+                        Promotional Price: RM299 per person (<del>RM429 Normal Price</del>)
+                    </p>
+
+                    <a href="https://www.redang.org/" target="_blank">
+                        Explore Pulau Redang
+                    </a>
+
+                    <h3>Available Seat</h3>
+
+                    <p>Number of seats filled: 28 out of 40</p>
+
+                    <meter min="0" max="40" value="28">
+                        28 out of 40 seats filled
+                    </meter>
+                </article>
+
+                <article id="kenyir" class="trip-card">
+                    <h3>Tasik Kenyir</h3>
+
+                    <p>
+                        Malaysia's largest man-made lake, surrounded
+                        by beautiful forests, waterfalls and wildlife.
+                    </p>
+
+                    <p class="price">
+                        Promotional Price: RM199 per person (<del>RM319 Normal Price</del>)
+                    </p>
+
+                    <a href="https://www.kenyirlake.com/" target="_blank">
+                        Explore Tasik Kenyir
+                    </a>
+                    <h3>Available Seat</h3>
+
+                    <p>Number of seats filled: 21 out of 40</p>
+
+                    <meter min="0" max="40" value="21">
+                        21 out of 40 seats filled
+                    </meter>
+                </article>
+
+                <article id="kualaterengganu" class="trip-card">
+                    <h3>Kuala Terengganu</h3>
+
+                    <p>
+                        Traditional Malaysian culture, visit
+                        beautiful mosques and enjoy delicious local food.
+                    </p>
+
+                    <p class="price">
+                        Promotional Price: RM149 per person (<del>RM200 Normal Price</del>)
+                    </p>
+
+                    <a href="https://www.terengganu.gov.my/" target="_blank">
+                        Explore Kuala Terengganu
+                    </a>
+                    <h3>Available Seat</h3>
+
+                    <p>Number of seats filled: 32 out of 40</p>
+
+                    <meter min="0" max="40" value="32">
+                        32 out of 40 seats filled
+                    </meter>
+                </article>
+
+            </section>
+
+            <section id="video">
+
+                <h2>Visit Terengganu Promotional Video</h2>
+
+                <p>
+                    Watch our promotional video and discover the beauty
+                    of Terengganu.
+                </p>
+
+                <video width="640" height="360" controls>
+                    <source src="terengganu-promo.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+
+                <p class="caption">
+                    Video: Discover the beautiful attractions of Terengganu.
+                </p>
+
+            </section>
+
+            <section id="contact">
+
+                <h2>Plan Your Trip With Us</h2>
+
+                <p>
+                    Complete the form below to let us know your travel
+                    preferences.
+                </p>
+
+                <form class="trip-form" action="#" method="get">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+
+                    <p><strong>Travel Type:</strong></p>
+
+                    <input type="radio" id="student" name="traveltype"
+                           value="Student" required>
+                    <label for="student">Student</label>
+
+                    <input type="radio" id="staff" name="traveltype"
+                           value="Staff">
+                    <label for="staff">Staff</label>
+
+                    <input type="radio" id="public" name="traveltype"
+                           value="Public">
+                    <label for="public">Public</label>
+
+                    <p><strong>Interests:</strong></p>
+
+                    <input type="checkbox" id="food" name="interests"
+                           value="Food">
+                    <label for="food">Food</label>
+
+                    <input type="checkbox" id="culture" name="interests"
+                           value="Culture">
+                    <label for="culture">Culture</label>
+
+                    <input type="checkbox" id="nature" name="interests"
+                           value="Nature">
+                    <label for="nature">Nature</label>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <p>
+                &copy; 2026 Visit Terengganu Tourism Promotion.
+                All Rights Reserved.
+            </p>
+
+            <address>
+                Email:
+                <a href="mailto:info@visit-terengganu.com">
+                    info@visit-terengganu.com
+                </a>
+            </address>
+
+        </footer>
+
+    </body>
+</html>
