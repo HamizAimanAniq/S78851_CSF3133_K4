@@ -1,0 +1,58 @@
+
+body {
+    font-family: 'Roboto', sans-serif; /* Error 1, Line 2: Misspelled 'Roboto'*/
+    background-image: url("paper.gif");
+    background-repeat: no-repeat; /* Error 2, Line 4: Changed no repeat to no-repeat. */
+    background-position: right top;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline; 
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover { /* Error 3, Line 23: Corrected li:a:hover to li a:hover. */
+    background-color: #111;
+}
+
+#products {
+    border-collapse: collapse; /* Error 4, Line 27: Changed collapsed to collapse. */
+    width: 100%;
+}
+
+#products td, #products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#products tr:nth-child(even) { /* Error 5, Line 34: Changed nth-child(2) to nth-child(even). */
+    background-color: #f2f2f2;
+}
+
+#products tr:hover { /*Error 6, Line 37: Changed 'Hovered' to 'hover'*/
+    background-color: #ddd;
+}
+
+#products th {
+    background-color: #04AA6D;
+    color: white;
+}
+
+footer {
+    background-color: #f1f1f1; /* Error 7, Line 45: Missing semicolon. */
+    text-align: center;
+    padding: 10px;
+}

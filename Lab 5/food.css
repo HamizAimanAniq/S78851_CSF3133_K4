@@ -1,0 +1,96 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 18 Nov 2026, 2:16:57 pm
+    Author     : user
+*/
+
+.header-section{
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+nav{
+    margin: 0 auto;
+}
+nav ul{
+    list-style-type:none;
+    overflow: hidden;
+    background-color:#333;
+}
+nav li{
+    float: left
+}
+
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+nav li a:hover{
+    background-color: #E67E22;
+}
+
+nav li a.active{
+    background-color: #E67E22;
+}
+
+.about-section{
+    p{
+        text-align: justify;
+        line-height: 1.5;
+        width:90%;
+        max-width:980px;
+        margin: 0 auto;
+    }
+}
+
+.menu-section {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.menu-section h3 {
+    color: #174D70;
+    border-left: 4px solid #E67E22;
+    padding-left: 10px;
+}
+
+#menu-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#menu-table th {
+    background-color: #E67E22;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid #333;
+}
+#menu-table td{
+    border: 1px solid #333;
+}
+#menu-table tr {
+    padding: 8px;
+    background-color: #F2F2F2;
+}
+
+#menu-table tr:hover {
+    background-color: #FDEBD0;
+}
+
+#menu-table td:last-child {
+    text-align: right;
+}
+
