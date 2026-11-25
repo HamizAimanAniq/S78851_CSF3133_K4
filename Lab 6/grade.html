@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Part 2: Link external CSS file -->
+</head>
+<body>
+    <h2>Student Grade Calculator</h2>
+
+    <!-- Student grade calculator form -->
+    <form name="gradeForm" onsubmit="return checkMark();"> <!-- Error 1: Added return to prevent the page from refreshing. -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="mark">Mark (0-100):</label>
+        <input type="text" id="mark" name="mark"><br>
+
+        <button type="submit">Check Grade</button>
+        <button type="button" onclick="randomMark()">Random Mark</button> <!-- Part 2: Added button to generate a random mark. -->
+    </form>
+
+    <!-- Display student result -->
+    <p id="result"></p>
+
+    <!-- Part 2: Display date and time -->
+    <p id="checkTime"></p>
+
+    <button type="button" onclick="showTable()">Show Grade Table</button> <!-- Error 2: Corrected showtable() to showTable() to match the JavaScript function name. -->
+
+    <!-- Display grade table -->
+    <div id="tableContainer"></div>
+
+    <script src="grade.js"></script> <!-- Error 3: Corrected grades.js to grade.js to match the actual JavaScript filename. -->
+</body>
+</html>
+
+

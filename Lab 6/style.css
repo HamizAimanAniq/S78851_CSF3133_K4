@@ -1,0 +1,99 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 25 Nov 2026, 4:41:27 pm
+    Author     : user
+*/
+
+
+/* Part 2: General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f4f7fa;
+}
+
+/* Part 2: Heading styling */
+h2 {
+    color: #164e70;
+}
+
+/* Part 2: Form styling */
+form {
+    background-color: white;
+    padding: 15px;
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Part 2: Label styling */
+label {
+    display: inline-block;
+    width: 110px;
+    margin: 8px 0;
+}
+
+/* Part 2: Input styling */
+input {
+    padding: 7px;
+    margin: 5px 0;
+    width: 180px;
+    box-sizing: border-box;
+}
+
+/* Part 2: Button styling */
+button {
+    background-color: #287bb5;
+    color: white;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px 3px;
+}
+
+/* Part 2: Button hover effect */
+button:hover {
+    background-color: #164e70;
+}
+
+/* Part 2: Result styling */
+#result {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Part 2: Date and time styling */
+#checkTime {
+    font-size: 13px;
+    color: #555;
+}
+
+/* Part 2: Grade table styling */
+table {
+    border-collapse: collapse;
+    width: 350px;
+    margin-top: 15px;
+    background-color: white;
+}
+
+/* Part 2: Table borders and padding */
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Part 2: Table header background */
+th {
+    background-color: #164e70;
+    color: white;
+}
+
+/* Part 2: Table row hover effect */
+tr:hover {
+    background-color: #e6f2f8;
+}
